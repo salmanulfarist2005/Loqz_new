@@ -1,0 +1,352 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+
+<div class="slider-area">
+    <div class="slider-active swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="intro-section slider-height-1 slider-content-center bg-img single-animation-wrap slider-bg-color-1"
+                    style="background-image:url(static/web/assets/images/slider/slider-bg-1.jpg)">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="slider-content-1 slider-animated-1">
+                                    <h3 class="animated">new arrival</h3>
+                                    <h1 class="animated">Home <br> Security & Luxury</h1>
+                                    <div class="slider-btn btn-hover">
+                                        <a href="product-details.html" class="btn animated">
+                                            VIEW MORE <i class=" ti-arrow-right "></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="hero-slider-img-1 slider-animated-1">
+
+                                    <div class="Sirv"
+                                        data-src="https://wsodqjnw.sirv.com/Spins/Door3/ReDoor2/ReDoor2.spin"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="home-single-product-img" data-aos="fade-up" data-aos-delay="200">
+                    <a href="product-details.html"><img
+                            src="{%  static  'web/assets/images/Products/Web_Photo_Editor.jpg'%}" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="home-single-product-content">
+                    <h2 data-aos="fade-up" data-aos-delay="200"><span class="loqz-class">LOQZ</span> Innovating Comfort,
+                        Transforming Lives!</h2>
+                    <!-- <h3 data-aos="fade-up" data-aos-delay="400">$20.25</h3> -->
+                    <p data-aos="fade-up" data-aos-delay="600">
+                        Experience unparalleled comfort and innovation with LOQZ, an emerging Indian brand transforming
+                        daily living. Trusted by thousands, we prioritize quality, service, and sustainability,
+                        contributing to a better living environment. Stay tuned for continuous innovative products from
+                        LOQZ, redefining your comfort.</p>
+
+                    <div class="product-details-action-wrap" data-aos="fade-up" data-aos-delay="1000">
+
+                        <div class="single-product-cart btn-hover">
+                            <a href="#">ABOUT MORE </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product-area pb-95">
+    <div class="container">
+        <div class="section-border section-border-margin-1" data-aos="" data-aos-delay="200">
+            <div class="section-title-timer-wrap bg-white">
+                <div class="section-title-1">
+                    <h2>FABLOCK ACE</h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-slider-active-1 swiper-container">
+            <div class="swiper-wrapper mt-5">
+                {% for product in fablock_ace %}
+                {% for product_image in product.get_image %}
+                <div class="swiper-slide">
+                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-img img-zoom mb-25">
+                            <a href="{{ product.get_absolute_url}}">
+                                <img src="{{ product_image.image.url }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endfor %}
+
+                {% comment %} <div class="swiper-slide">
+                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="600">
+                        <div class="product-img img-zoom mb-25">
+                            <a href="product-details.html">
+                                <img src="{%  static  'web/assets/images/Products/product-3.png'%}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="800">
+                        <div class="product-img img-zoom mb-25">
+                            <a href="product-details.html">
+                                <img src="{%  static  'web/assets/images/Products/product-4.png'%}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="product-img img-zoom mb-25">
+                            <a href="product-details.html">
+                                <img src="{%  static  'web/assets/images/Products/product-5.png'%}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+            </div>
+            <div class="product-prev-1 product-nav-1" data-aos="fade-up" data-aos-delay="200"><i
+                    class="fa fa-angle-left"></i></div>
+            <div class="product-next-1 product-nav-1" data-aos="fade-up" data-aos-delay="200"><i
+                    class="fa fa-angle-right"></i></div>
+        </div>
+    </div>
+</div>
+
+<div id="beforeAfterImgContainer">
+    <!-- The before image is first -->
+    <img src="{%  static  'web/assets/images/Products/after-image.png'%}" />
+    <!-- The after image is last -->
+    <img src="{%  static  'web/assets/images/Products/before-image.png'%}" />
+</div>
+
+<div class="service-area pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-30">
+                <div class="service-wrap" data-aos="" data-aos-delay="200">
+                    <div class="service-img">
+                        <img src="{%  static  'web/assets/images/icon-img/car.png'%}" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h3>Free Shipping</h3>
+                        <p>Free shipping on all order</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-30">
+                <div class="service-wrap" data-aos="" data-aos-delay="400">
+                    <div class="service-img">
+                        <img src="{%  static  'web/assets/images/icon-img/time.png'%}" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h3>Support 24/7</h3>
+                        <p>Support 24 hours a day</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-30">
+                <div class="service-wrap" data-aos="" data-aos-delay="600">
+                    <div class="service-img">
+                        <img src="{%  static  'web/assets/images/icon-img/dollar.png'%}" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h3>Money Return</h3>
+                        <p>Back Guarantee Under </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-30">
+                <div class="service-wrap" data-aos="" data-aos-delay="800">
+                    <div class="service-img">
+                        <img src="{%  static  'web/assets/images/icon-img/discount.png'%}" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h3>Order Discount</h3>
+                        <p>Onevery order over $150</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product-area pb-95">
+    <div class="container">
+        <div class="section-border section-border-margin-1" data-aos="" data-aos-delay="200">
+            <div class="section-title-timer-wrap bg-white">
+                <div class="section-title-1">
+                    <h2>Smart Fablock</h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="product-slider-active-1 swiper-container">
+            <div class="swiper-wrapper mt-5">
+                {% for product in smart_fablock_plus %}
+                {% for product_image in product.get_image %}
+                <div class="swiper-slide">
+                    <div class="product-wrap" data-aos="" data-aos-delay="200">
+                        <div class="product-img img-zoom mb-25">
+                            <a href="{{ product.get_absolute_url}}">
+                                <img src="{{ product_image.image.url }}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endfor %}
+
+                {% comment %} <div class="swiper-slide">
+                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="600">
+                        <div class="product-img img-zoom mb-25">
+                            <a href="product-details.html">
+                                <img src="{%  static  'web/assets/images/Products/product-3.png'%}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-wrap" data-aos="" data-aos-delay="800">
+                        <div class="product-img img-zoom mb-25">
+                            <a href="product-details.html">
+                                <img src="{%  static  'web/assets/images/Products/product-4.png'%}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-wrap" data-aos="" data-aos-delay="1000">
+                        <div class="product-img img-zoom mb-25">
+                            <a href="product-details.html">
+                                <img src="{%  static  'web/assets/images/Products/product-5.png'%}" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+            </div>
+            <div class="product-prev-1 product-nav-1" data-aos="" data-aos-delay="200"><i class="fa fa-angle-left"></i>
+            </div>
+            <div class="product-next-1 product-nav-1" data-aos="" data-aos-delay="200"><i class="fa fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="testimonial-area">
+    <div class="container">
+        <div class="section-title-2 st-border-center text-center mb-" data-aos="" data-aos-delay="200">
+            <h2>Testimonial</h2>
+        </div>
+        <div class="testimonial-active swiper-container">
+            <div class="swiper-wrapper">
+                {% for testimonial in testimonials %}
+                <div class="swiper-slide">
+                    <div class="single-testimonial" data-aos="" data-aos-delay="200">
+                        <div class="testimonial-img">
+                            <img src="{{ testimonial.image.url}}" alt="">
+                        </div>
+                        <p>{{testimonial.description}}</p>
+                        <div class="testimonial-info">
+                            <h4>{{testimonial.name}}</h4>
+                            <span> {{testimonial.positio}}</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% comment %} <div class="swiper-slide">
+                    <div class="single-testimonial" data-aos="" data-aos-delay="400">
+                        <div class="testimonial-img">
+                            <img src="{%  static  'web/assets/images/testimonial/client-2.png'%}" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempo incididunt ut
+                            labore et dolore.</p>
+                        <div class="testimonial-info">
+                            <h4>Andi Lane</h4>
+                            <span> Designer.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-testimonial" data-aos="" data-aos-delay="600">
+                        <div class="testimonial-img">
+                            <img src="{%  static  'web/assets/images/testimonial/client-1.png'%}" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempo incididunt ut
+                            labore et dolore.</p>
+                        <div class="testimonial-info">
+                            <h4>Ted Ellison</h4>
+                            <span> Developer.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="single-testimonial">
+                        <div class="testimonial-img">
+                            <img src="{%  static  'web/assets/images/testimonial/client-2.png'%}" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempo incididunt ut
+                            labore et dolore.</p>
+                        <div class="testimonial-info">
+                            <h4>Aliah Pitts</h4>
+                            <span> Customer.</span>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="blog-area pb-70">
+    <div class="container">
+        <div class="section-title-2 st-border-center text-center mb-75" data-aos="" data-aos-delay="200">
+            <h2>LATEST NEWS</h2>
+        </div>
+        <div class="row">
+            {% for update in updates %}
+            <div class="col-lg-3 col-md-6">
+                <div class="blog-wrap mb-30" data-aos="" data-aos-delay="200">
+                    <div class="blog-img-date-wrap mb-25">
+                        <div class="blog-img">
+                            <a href="{{update.get_absolute_url}}">
+                                <img src="{{update.image.url}}" alt=""></a>
+                        </div>
+
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <ul>
+                                <li><a href="{{update.get_absolute_url}}"></a><i class="fa fa-calendar"></i></li>
+                                <li><a href="{{update.get_absolute_url}}">{{update.date}}</a></li>
+                            </ul>
+                        </div>
+                        <h3><a href="{{update.get_absolute_url}}">{{update.title}}</a></h3>
+                        <div class="blog-btn">
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}

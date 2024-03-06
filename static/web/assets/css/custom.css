@@ -48,22 +48,15 @@
   .single-product-cart > a{
     width: 86px;
     height: 28px;
-    margin-top: 0px;
+    margin-top: 10px;
     padding-left: 20px;
-    padding-top: 7px;
+    padding-top: 9px;
     font-size: 7px;
   }
 
-  .single-testimonial{
-    display: none;
-  }
-
-  .testimonial-none{
-    display: none;
-  }
 
 
-  .title-timer-wrap .section-title-1 h2{
+.title-timer-wrap .section-title-1 h2{
     font-size: 10px;
   } 
 .section-title-2 h2{
@@ -135,7 +128,29 @@
 }
 
 
+.before-after {
+  height: 50vh !important;
 }
+
+.single-product-cart > a{
+  margin-bottom: 14px;
+}
+
+.pb-70 {
+  padding-top: -270px !important;
+}
+
+.testimonial-active .swiper-slide.swiper-slide-active .single-testimonial{
+  margin-top: 15px;
+}
+.pb-95 {
+  padding-bottom: 10px;
+}
+
+
+
+}
+
 
 
 .before-after {

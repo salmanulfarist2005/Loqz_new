@@ -8,8 +8,8 @@ from django.shortcuts import render, get_object_or_404
 
 def index(request):
     updates= Updates.objects.all()[:4]
-    fablock_ace = Product.objects.filter(is_fablock_ace=True)
-    smart_fablock_plus = Product.objects.filter(is_smart_fablock_plus=True)
+    fablock_ace = Product.objects.filter(category="fablock_ace")
+    smart_fablock_plus = Product.objects.filter(category="smart_fablock_plus")
     testimonials = Testimonial.objects.all()
     context={
         'updates'  : updates,
@@ -70,6 +70,7 @@ def updates(request):
     }
     return render(request,"web/updates.html",context)
 
+
 def product_details(request, slug):
     product = get_object_or_404(Product, slug=slug)
     other_products = Product.objects.exclude(slug=slug)
@@ -106,9 +107,10 @@ def dealership(request):
             response_data = {"status": "false", "title": "Form validation error"}
             return JsonResponse(response_data)
     else:
-        form = DealershipForm() 
+        initial_data = {'interest': 'dealership'}  # Define your initial data here
+        form = DealershipForm(initial=initial_data) # Pass initial data to the form
+            
         context = {
             "form": form,
         }
         return render(request, "web/dealership.html", context)
-

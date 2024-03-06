@@ -136,3 +136,50 @@
 
 
 }
+
+
+.before-after {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Adjust width as needed */
+  height: 100vh; /* Adjust height as needed */
+}
+
+.before,
+.after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out; /* Add transition */
+}
+
+.after {
+  transform: translateX(100%); /* Initially hide after image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  padding-left: 50px;
+  padding-right: 50px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  opacity: 1; /* Make overlay visible initially */
+}
+
+.before-after:hover .after {
+  transform: translateX(0); /* Remove hover effect */
+}
+
+.before-after:hover .overlay {
+  opacity: 1; /* Keep overlay visible on hover */
+}
+
+
+.second-tittle{
+  font-size: 10px;
+}

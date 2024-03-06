@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Updates,Team,Contact,Product,ProductImages,Testimonial,Dealership,DealershipInterest
+from .models import Updates,Team,Contact,Product,ProductImages,Testimonial,Dealership
 
 # Register your models here.
 @admin.register(Team)
@@ -34,6 +34,3 @@ class TestimonialAdmin(admin.ModelAdmin):
 class DealershipAdmin(admin.ModelAdmin):
     list_display = ("firm_name","full_name")
 
-@admin.register(DealershipInterest)
-class DealershipInteresAdmin(admin.ModelAdmin):
-    list_display =("interest_name",)

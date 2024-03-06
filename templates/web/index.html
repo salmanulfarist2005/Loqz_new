@@ -132,18 +132,27 @@
     </div>
 </div>
 
-<div id="beforeAfterImgContainer">
-    <!-- The before image is first -->
+<!-- <div id="beforeAfterImgContainer">
+   
     <img src="{%  static  'web/assets/images/Products/after-image.png'%}" />
-    <!-- The after image is last -->
+   
     <img src="{%  static  'web/assets/images/Products/before-image.png'%}" />
+</div> -->
+<div class="container">
+<div class="before-after">
+    <img src="{%  static  'web/assets/images/Products/before-image.png'%}" alt="Before Image" class="before">
+    <img src="{%  static  'web/assets/images/Products/after-image.png'%}" alt="After Image" class="after">
+    <span class="overlay"></span>
+  </div>
+
 </div>
+  
 
 <div class="service-area pb-70">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-30">
-                <div class="service-wrap" data-aos="" data-aos-delay="200">
+                <div class="service-wrap" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-img">
                         <img src="{%  static  'web/assets/images/icon-img/car.png'%}" alt="">
                     </div>
@@ -154,7 +163,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-30">
-                <div class="service-wrap" data-aos="" data-aos-delay="400">
+                <div class="service-wrap" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-img">
                         <img src="{%  static  'web/assets/images/icon-img/time.png'%}" alt="">
                     </div>
@@ -165,7 +174,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-30">
-                <div class="service-wrap" data-aos="" data-aos-delay="600">
+                <div class="service-wrap" data-aos="fade-up" data-aos-delay="600">
                     <div class="service-img">
                         <img src="{%  static  'web/assets/images/icon-img/dollar.png'%}" alt="">
                     </div>
@@ -176,7 +185,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-30">
-                <div class="service-wrap" data-aos="" data-aos-delay="800">
+                <div class="service-wrap" data-aos="fade-up" data-aos-delay="800">
                     <div class="service-img">
                         <img src="{%  static  'web/assets/images/icon-img/discount.png'%}" alt="">
                     </div>
@@ -191,7 +200,7 @@
 </div>
 <div class="product-area pb-95">
     <div class="container">
-        <div class="section-border section-border-margin-1" data-aos="" data-aos-delay="200">
+        <div class="section-border section-border-margin-1" data-aos="fade-up" data-aos-delay="200">
             <div class="section-title-timer-wrap bg-white">
                 <div class="section-title-1">
                     <h2>Smart Fablock</h2>
@@ -204,7 +213,7 @@
                 {% for product in smart_fablock_plus %}
                 {% for product_image in product.get_image %}
                 <div class="swiper-slide">
-                    <div class="product-wrap" data-aos="" data-aos-delay="200">
+                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="200">
                         <div class="product-img img-zoom mb-25">
                             <a href="{{ product.get_absolute_url}}">
                                 <img src="{{ product_image.image.url }}" alt="">
@@ -225,7 +234,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="product-wrap" data-aos="" data-aos-delay="800">
+                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="800">
                         <div class="product-img img-zoom mb-25">
                             <a href="product-details.html">
                                 <img src="{%  static  'web/assets/images/Products/product-4.png'%}" alt="">
@@ -234,7 +243,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="product-wrap" data-aos="" data-aos-delay="1000">
+                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="1000">
                         <div class="product-img img-zoom mb-25">
                             <a href="product-details.html">
                                 <img src="{%  static  'web/assets/images/Products/product-5.png'%}" alt="">
@@ -243,9 +252,9 @@
                     </div>
                 </div> {% endcomment %}
             </div>
-            <div class="product-prev-1 product-nav-1" data-aos="" data-aos-delay="200"><i class="fa fa-angle-left"></i>
+            <div class="product-prev-1 product-nav-1" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-angle-left"></i>
             </div>
-            <div class="product-next-1 product-nav-1" data-aos="" data-aos-delay="200"><i class="fa fa-angle-right"></i>
+            <div class="product-next-1 product-nav-1" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-angle-right"></i>
             </div>
         </div>
     </div>
@@ -254,7 +263,7 @@
 
 <div class="testimonial-area">
     <div class="container">
-        <div class="section-title-2 st-border-center text-center mb-" data-aos="" data-aos-delay="200">
+        <div class="section-title-2 st-border-center text-center mb-" data-aos="fade-up" data-aos-delay="200">
             <h2>Testimonial</h2>
         </div>
         <div class="testimonial-active swiper-container">
@@ -263,7 +272,7 @@
                 <div class="swiper-slide">
                     <div class="single-testimonial" data-aos="" data-aos-delay="200">
                         <div class="testimonial-img">
-                            <img src="{{ testimonial.image.url}}" alt="">
+                            <img src="{{ testimonial.image.url}}" alt="fade-up">
                         </div>
                         <p>{{testimonial.description}}</p>
                         <div class="testimonial-info">
@@ -274,7 +283,7 @@
                 </div>
                 {% endfor %}
                 {% comment %} <div class="swiper-slide">
-                    <div class="single-testimonial" data-aos="" data-aos-delay="400">
+                    <div class="single-testimonial" data-aos="fade-up" data-aos-delay="400">
                         <div class="testimonial-img">
                             <img src="{%  static  'web/assets/images/testimonial/client-2.png'%}" alt="">
                         </div>
@@ -287,7 +296,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="single-testimonial" data-aos="" data-aos-delay="600">
+                    <div class="single-testimonial" data-aos="fade-up" data-aos-delay="600">
                         <div class="testimonial-img">
                             <img src="{%  static  'web/assets/images/testimonial/client-1.png'%}" alt="">
                         </div>
@@ -318,13 +327,13 @@
 </div>
 <div class="blog-area pb-70">
     <div class="container">
-        <div class="section-title-2 st-border-center text-center mb-75" data-aos="" data-aos-delay="200">
+        <div class="section-title-2 st-border-center text-center mb-75" data-aos="fade-up" data-aos-delay="200">
             <h2>LATEST NEWS</h2>
         </div>
         <div class="row">
             {% for update in updates %}
             <div class="col-lg-3 col-md-6">
-                <div class="blog-wrap mb-30" data-aos="" data-aos-delay="200">
+                <div class="blog-wrap mb-30" data-aos="fade-up" data-aos-delay="200">
                     <div class="blog-img-date-wrap mb-25">
                         <div class="blog-img">
                             <a href="{{update.get_absolute_url}}">

@@ -44,4 +44,5 @@ class DealershipForm(forms.ModelForm):
             "annual_turnover": forms.TextInput(attrs={"class": "required", "placeholder": "Annual Turnover *"}),
             "interest": forms.Select(attrs={"class": "select-form"}),
             "why_loqz": forms.Textarea(attrs={"class": "required", "placeholder": "Reasons To Show Interest In Loqz Brand *"}),
+            "whatsapp_number": forms.NumberInput(attrs={"class": "required", "placeholder": "Whatsapp number*"}),
         }

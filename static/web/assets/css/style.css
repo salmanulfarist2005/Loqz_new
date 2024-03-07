@@ -6168,6 +6168,12 @@ textarea {
   .blog-details-wrapper h1 {
     font-size: 20px;
   }
+
+  .blog-details-wrapper .blog-details-img-date-wrap .blog-details-img img {
+    width: 925px;
+    
+  }
+  
 }
 
 .blog-details-wrapper > p {
@@ -6215,6 +6221,11 @@ textarea {
     margin: 0 0 15px;
     line-height: 30px;
   }
+
+  .blog-details-wrapper .blog-details-img-date-wrap .blog-details-img img {
+    width: 925px;
+  }
+  
 }
 
 @media only screen and (max-width: 767px) {

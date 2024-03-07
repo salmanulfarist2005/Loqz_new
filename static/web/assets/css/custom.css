@@ -72,7 +72,8 @@
 }
 
 .pt-100{
-  padding-top: 10%;
+  padding-top: 6%;
+  padding-bottom: 0;
 }
 
 .product-area{
@@ -113,7 +114,7 @@
 }
  
 .blog-details-wrapper .blog-meta-2 ul li{
-  margin: 85px 5px 0 0;
+  margin: 110px 5px 0 0;
 }
 .about-content h1 {
   font-size: 15px;
@@ -147,9 +148,12 @@
   padding-bottom: 10px;
 }
 
-
-
+.blog-details-wrapper .blog-details-img-date-wrap .blog-details-img img{
+  width: 345px;
+    height: 150px;
 }
+}
+
 
 
 
@@ -198,3 +202,16 @@
 .second-tittle{
   font-size: 17px;
 }
+
+
+@media  only screen and (max-width: 300px){
+  .blog-details-wrapper .blog-details-img-date-wrap .blog-details-img img {
+   display: none;
+  }
+
+  .pt-100{
+    padding-top: 45px;
+  }
+  
+}
+ 

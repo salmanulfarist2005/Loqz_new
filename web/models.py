@@ -89,6 +89,7 @@ class Dealership(models.Model):
     full_name = models.CharField(max_length=200)
     email = models.EmailField()
     mobile = models.IntegerField()
+    whatsapp_number=models.IntegerField(blank=True , null=True)
     address = models.CharField(max_length=200)
     pincode = models.IntegerField()
     state = models.CharField(max_length=150)

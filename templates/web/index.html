@@ -96,33 +96,7 @@
                 {% endfor %}
                 {% endfor %}
 
-                {% comment %} <div class="swiper-slide">
-                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="600">
-                        <div class="product-img img-zoom mb-25">
-                            <a href="product-details.html">
-                                <img src="{%  static  'web/assets/images/Products/product-3.png'%}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="800">
-                        <div class="product-img img-zoom mb-25">
-                            <a href="product-details.html">
-                                <img src="{%  static  'web/assets/images/Products/product-4.png'%}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="product-wrap" data-aos="fade-up" data-aos-delay="1000">
-                        <div class="product-img img-zoom mb-25">
-                            <a href="product-details.html">
-                                <img src="{%  static  'web/assets/images/Products/product-5.png'%}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div> {% endcomment %}
+             
             </div>
             <div class="product-prev-1 product-nav-1" data-aos="fade-up" data-aos-delay="200"><i
                     class="fa fa-angle-left"></i></div>
@@ -132,7 +106,7 @@
     </div>
 </div>
 
-<!-- <div id="beforeAfterImgContainer">
+ {% comment %} <div id="beforeAfterImgContainer">
    
     <img src="{%  static  'web/assets/images/Products/after-image.png'%}" />
    
@@ -145,6 +119,13 @@
         <!-- The after image is last -->
         <img  src=" {%  static  'web/assets/images/Products/before-image-new.jpg'%}" />
           </div>  
+</div> {% endcomment %}
+ <div class="container">
+<div class="before-after">
+    <img src="{%  static  'web/assets/images/Products/before-image.png'%}" alt="Before Image" class="before">
+    <img src="{%  static  'web/assets/images/Products/after-image.png'%}" alt="After Image" class="after">
+    <span class="overlay"></span>
+  </div>
 
 </div>
   
@@ -225,6 +206,7 @@
                 {% endfor %}
                 {% endfor %}
 
+<<<<<<< HEAD
                 {% comment %} <div class="swiper-slide">
                     <div class="product-wrap" data-aos="" data-aos-delay="600">
                         <div class="product-img img-zoom mb-25">
@@ -252,6 +234,8 @@
                         </div>
                     </div>
                 </div> {% endcomment %}
+=======
+>>>>>>> 2d8b5065880794735e7e8e00ac5472700a065e56
             </div>
             <div class="product-prev-1 product-nav-1" data-aos="" data-aos-delay="200"><i class="fa fa-angle-left"></i>
             </div>
@@ -262,7 +246,7 @@
 </div>
 
 
-<div class="testimonial-area">
+<div class="testimonial-area testmoial-div">
     <div class="container">
         <div class="section-title-2 st-border-center text-center mb-" data-aos="" data-aos-delay="200">
             <h2>Testimonial</h2>
@@ -326,7 +310,7 @@
         </div>
     </div>
 </div>
-<div class="blog-area pb-70">
+<div class="blog-area update-area pb-100">
     <div class="container">
         <div class="section-title-2 st-border-center text-center mb-75" data-aos="" data-aos-delay="200">
             <h2>LATEST NEWS</h2>

@@ -258,7 +258,7 @@
      border-radius: 10px; */
      box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
       -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
-       -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
+      -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
     padding-left: 10px;
     padding-top: 10px;
     padding-right: 10px;

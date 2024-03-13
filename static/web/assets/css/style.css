@@ -4195,8 +4195,8 @@ textarea {
     margin: 0 0 24px;
   }
 }
-
 .banner-content-5 {
+
   position: absolute;
   left: 0;
   right: 0;
@@ -4273,6 +4273,10 @@ textarea {
     margin: 17px 0 25px;
     font-size: 27px;
   }
+
+  .banner-content-5 {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4286,6 +4290,10 @@ textarea {
   .banner-content-5 h2 {
     margin: 10px 0 22px;
     font-size: 28px;
+  }
+
+  .banner-content-5 {
+    display: none;
   }
 }
 
@@ -4322,6 +4330,10 @@ textarea {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-content-5 h1.font-montserrat {
     font-size: 50px;
+  }
+
+  .banner-content-5 {
+    display: none;
   }
 }
 
@@ -4364,25 +4376,26 @@ textarea {
   padding: 52px 0 60px;
 }
 
-/* .bg-padding-2 {
-  padding: 148px 0 153px;
-} */
+ .bg-padding-2 {
+  padding: -1px 0 -1px;
+  height: 385px;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .bg-padding-2 {
-    padding: 100px 0 105px;
+    padding: 228px 0 105px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .bg-padding-2 {
-    padding: 90px 0 95px;
+    padding: 287px 0 95px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .bg-padding-2 {
-    padding: 65px 0 70px;
+    padding: 160px 0 70px;
   }
 }
 
@@ -7044,7 +7057,7 @@ textarea {
 }
 
 .footer-about .footer-logo a img {
-  max-width: 60px;
+  max-width: 20%;
   margin-left: 20px;
 
 }

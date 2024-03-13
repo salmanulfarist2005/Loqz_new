@@ -156,6 +156,16 @@
 .footer-about .footer-logo a img{
   width: 25px;
 }
+
+.banner-content-5.banner-content-5-static {
+  display: none;
+}
+
+.bg-padding-2{
+  position: relative;
+  top: 60px;
+  bottom: 65px;
+}
 }
 
 
